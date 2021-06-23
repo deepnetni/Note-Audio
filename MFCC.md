@@ -5,6 +5,12 @@
 - [2. 梅尔倒谱系数（Mel-scaleFrequency Cepstral Coefficients）](#2-梅尔倒谱系数mel-scalefrequency-cepstral-coefficients)
   - [2.1. 梅尔标度频率](#21-梅尔标度频率)
   - [2.2. MFCC提取过程](#22-mfcc提取过程)
+  - [2.3. 预加重](#23-预加重)
+  - [2.4. 分帧](#24-分帧)
+  - [2.5. 加窗](#25-加窗)
+  - [2.6. Mel 滤波](#26-mel-滤波)
+  - [2.7. 取对数](#27-取对数)
+  - [2.8. DCT](#28-dct)
 
 # 2. 梅尔倒谱系数（Mel-scaleFrequency Cepstral Coefficients）
 
@@ -21,8 +27,6 @@ $$
 
 - 从Hz到mel的映射图，由于它们是log的关系，当频率较小时，mel随Hz变化较快；
 - 当频率很大时，mel的上升很缓慢，曲线的斜率很小。这说明了人耳对低频音调的感知较灵敏，在高频时人耳是很迟钝的，梅尔标度滤波器组启发于此；
-
-<!-- ![mel_fpng](https://github.com/deepnetni/Note-Audio/blob/main/imgs/mel_f.png) -->
 
 ```py
 import numpy as np
@@ -48,3 +52,15 @@ graph TB
 A(连续语音)-->OP1(预加重,分帧和加窗)-->OP2(FFT Fast Fourier Transform)-->OP3
 OP3(Mel 滤波)-->OP4(取对数)-->OP5(DCT Discrete cosine transform)-->OP6(动态特征 MFCC)
 ```
+
+## 2.3. 预加重
+
+## 2.4. 分帧
+
+## 2.5. 加窗
+
+## 2.6. Mel 滤波
+
+## 2.7. 取对数
+
+## 2.8. DCT
