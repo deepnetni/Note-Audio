@@ -1,5 +1,7 @@
 <font size=20 color=CadetBlue face="微软雅黑"><center>频谱分析</center></font>
 
+-------------
+
 # 1. Best Understanding
 
 # 2. 傅里叶变换
